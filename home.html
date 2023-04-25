@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* * {
+    font-family: 'Poppins', sans-serif;
+} */
+
+img {
+    height: 280px;
+}
+#social{
+    transform: scale(1.2);
+    transition:  1s ease-in-out;
+}
+
+body {
+    background: hsl(0, 0, 94%);
+}
+         .section2{
+            background-color: rgb(184, 193, 193);
+            /* display: flex; */
+
+        }
+        .active{
+            border: 2px solid black;
+        }
+        .album{
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .album > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s ;
+        }
+        .album > div:hover{
+            flex: 5;
+        }
+        .motion{
+            border: 0.2px solid black;
+        }
+        .motionslider{
+            width: 80px;
+            height: 5px;
+            background-color: black;
+            border: 2px solid black;
+        }
+        .motionslider:hover{
+            transform: translateX(402px);
+            /* transform: translateX(-452px); */
+            transition: 3s all ease-in-out;
+        }
+        .line{
+            
+            width: 96%;
+            border: 1px solid rgb(255, 255, 255);
+        }
+        
+        .a{
+            text-align: center;
+            font-size: xx-large;
+            
+        }
+        .b{
+            height: 200px;
+        }
+        .c{
+            text-align: center;
+            
+        }
+        .bg-danger{
+            border: 1px solid black;
+            width: 170px;
+            height: 40px;
+            margin: 50px;
+            color:aliceblue;
+        }
+        .bg-dark {
+            height: 550px;
+        }
+        .logospace{
+            margin-left: 50px;
+        }
+        #about{
+            height:50vh;
+            background-image: url('residental1.jpg');
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            /* background-color: cyan; */
+            padding:20px;
+        }
+        .navhover:hover{
+            transform: scale(1.5px);
+            transition: all 3s ease-in ;
+            color: aliceblue;
+        }
+        
+
+       
+    </style>
+</head>
+<body>
+    <!-- navebar -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="height: 100px; background: black;  width: 100%; font-family: 'IM Fell Great Primer SC', serif;" >
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar2">
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="home.html" id="navhover" class="nav-link active ms-5" aria-current="page" style="font-size: 30px; color:goldenrod">Home</a></li>
+                        <li class="nav-item"><a href="about.html" id="navhover" class="nav-link "style="font-size: 30px; margin-left:200px; font-style:Serif; color:goldenrod">About Us</a></li>
+                    </ul>
+                </div>
+                <a href="home.html" class="navbar-brand text-center"><img src="lo.png" alt="" width="170px" style="height: 150px; margin-top: 100px; margin-left: 100px;"></a>
+                <Div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown"><a href="service.html" id="navhover" class="nav-link dropdown" role="button" data-bs-toggle="dropdown" style="font-size: 30px; margin-right:200px; color:goldenrod">Our Service</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html" class="dropdown-item">Our Service</a></li>
+                                <li><a href="residental.html" class="dropdown-item">Residental Interior Services</a></li>
+                                <li><a href="commersial.html" class="dropdown-item">Commercial Interior Services</a></li>
+                                <li><a href="hospital.html" class="dropdown-item">Hospital Interior Service</a></li>
+                                <li><a href="Hotel.html" class="dropdown-item">Turnkey Interior Service</a></li>
+                            </ul>
+                            <li class="nav-item"><a href="contactus.html" id="navhover" class="nav-link me-5" style="font-size: 30px; color:goldenrod">Contact Us</a></li>
+            </li>
+                </ul>
+               
+        </div>
+    </nav> 
+    <video src="Welcome to.mp4" width="100%" loop autoplay muted ></video>
+
+    <!-- our work process  -->
+    <div class="container-fluid " style="background-image: url(Group\ 21.jpg); width: 100%; height: 545px; background-repeat: no-repeat; background-size: cover;">
+        <!-- <div class="container" style="font-family: 'IM Fell Great Primer SC', serif;"">
+        <h2 style="font-size: 60px;"><br>Our Work Process :-</h2>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <h2 style="font-size: 50px;">1. Appoinment</h2>
+                <p style="font-size: 20px; margin-left: 40px;">   Our Team Will Fix An Appoinment<br>With You.</p>
+                <br><br>
+                <h2 style="font-size: 50px;">3. Approval</h2>
+                <p style="font-size: 20px; margin-left: 50px;">Get Your Approval On The Idea <br>&  Finalize.
+                </p>
+            </div>
+            <div class="col-6" > <h2 style="font-size: 50px; margin-left:130px;">2. Visit</h2>
+                <p style="font-size: 20px; margin-left:190px;">We Visit & Discuss Your<br> Requirement.</p>
+                <br><br>
+                <h2 style="font-size: 50px; margin-left:130px;">4. Execution</h2>
+                <p style="font-size: 20px; margin-left:190px;">Execution Of The Project.
+                </p>
+            </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+    <!-- we design all over india -->
+    <Div class="container-fluid" style="background-image:url(12.jpg); background-size: cover; margin-top: 5px; ">
+        
+        <h1 class="text-white " style="font-size: 55px; margin-left: 30px;margin-top: px; font-family: 'IM Fell Great Primer SC', serif;""><br>We Design All Over<br> The India.</h1>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-7">
+                <p class="text-white " style="font-size: 20px;">If you’re looking to improve your home’s functionality, breathe life into a bedroom, or hire an interior designer for any other reason, call us today and we can design the perfect home office set up for you. We are the best interior designer company in Mumbai. <br>
+                    <div id="demo" class="collapse text-light" style="font-size: 20px;">
+                        Designing interiors is a crucial part of creating a functional and aesthetic space that reflects the personality and style of the individual or organization. With India's diverse culture and rich history, interior design is an essential element in creating a space that is both contemporary and culturally significant. Whether it's a residential or commercial project, the design must be cohesive, functional, and visually appealing. A good interior designer in India will understand the client's needs, incorporate local materials and styles, and create a space that is both practical and visually stunning. From traditional to modern, India has a wealth of design inspiration that can be incorporated into any space.
+                    </div>
+                    <a href="#demo" class=" text-light" data-bs-toggle="collapse" style="font-size: 25px;">Read More</a>
+                   
+            </div>
+            <br><br><br>
+            <section  class="text-center container-fluid"><br><br><br>
+
+                <img src="livingroom1.jpg" alt="" style="width: 250px; height: 240px; border: 2px solid rgb(255, 255, 255);">
+                <img src="com.jpg" alt="" style="width: 250px; height: 240px; border: 2px solid rgb(255, 255, 255); margin-left: 50px;">
+                <img src="hosp.jpg" alt="" style="width: 250px; height: 240px; border: 2px solid rgb(255, 255, 255); margin-left: 50px;">
+                <img src="R (1).jpg" alt="" style="width: 250px; height: 240px; border: 2px solid rgb(255, 255, 255); margin-left: 50px;">
+                <img src="bed3.jpg" alt="" style="width: 250px; height: 240px; border: 2px solid rgb(255, 255, 255); margin-left: 50px;">
+                <br><br><br>
+            </section>
+
+
+        </div>
+    </Div>
+
+
+
+
+    <!-- who we are  -->
+    <div class="container-fluid " style="background-image:url(Untitled\ design\ \(5\).png); background-size: cover; color: aliceblue; margin-top: 5px; ">
+        <div class="row">
+            <div class="col-4"><h1 style="font-size: 55px; margin-left: 30px;margin-top: 15px; font-family: 'IM Fell Great Primer SC', serif;"">Who We Are :-</h1></div>
+            <div class="col-7">
+                <br><br><br>
+                <p style="font-size: 20px;">We are one of the Best Office Interior Designer company in Mumbai
+
+                    with over 20 Years of Experience in this industry. We help you with 
+                     
+                    a Complete unique creative combination of exclusive design services
+                    
+                    and also help you during the execution process. We Provide you with
+                    
+                    fixed working fees and offer you complete control over the budget.
+                    
+                    We make sure that about transparency, affordability, flexibility, 
+                    
+                    reliability, loyalty, and 100% commitment <br> 
+                    <p style="font-size: 20px;">The aim is to deliver the best and most efficient services in terms of interior design services. With the intention of providing the best services, <b style="color: #c19f15;">Thar Furniture</b> believes in giving valuable service for the money spent by the client. To help thousands of people.</p> <div id="read" class="collapse text-light" style="font-size: 20px;">
+                        Our professional team of dedicated and experienced office interior designers in Mumbai combines their skills and works in harmony to 
+                        create outstanding interior designs for your office with the magnificent 
+                        
+                        view. Inboard us to get an affordable price, unique design, fast delivery, 
+                        
+                        long time service provider support.
+                </div>
+                    <a href="#read" class=" text-light" data-bs-toggle="collapse" style="font-size: 25px;">Read More</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- what we offer -->
+    <div class="container-fluid text-white" style="background-image:url(Untitled\ design\ \(7\).png); background-repeat: no-repeat; background-size: cover; margin-top: -22px;"><h5 class="ms-4 mt-3" style="font-size: 25px;"><br>EXPERTISE</h5>
+    <div class="row"><div class="col-4 "><h1 style="font-size: 52px; margin-left: 22px; font-family: 'IM Fell Great Primer SC', serif;"">What We Offer :-</h1></div>
+    <div class="col-8"><strong><div style="border: 3px solid rgb(142, 140, 140);"></div></strong>
+    <br>
+        <a href="residental.html" style="font-size: 35px; text-decoration: none;" class="text-light">Residental Interior Services <i class="bi bi-arrow-right-short" style="margin-left: 450px;"></i> </a><hr><br>
+        <a href="commersial.html" style="font-size: 35px; text-decoration: none;"  class="text-light">Commercial Interior Services <i class="bi bi-arrow-right-short" style="margin-left: 430px;"></i></a><hr><br>
+        <a href="hospital.html" style="font-size: 35px; text-decoration: none;"  class="text-light">Hospitality Interior Services <i class="bi bi-arrow-right-short" style="margin-left: 450px;"></i></a><hr><br>
+        <a href="Hotel.html" style="font-size: 35px; text-decoration: none;"  class="text-light">Turnkey Interior Services <i class="bi bi-arrow-right-short" style="margin-left: 495px;"></i></a><br><br><br><br><br>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- our project carousel -->
+<div class="container-fluid  " style="background-color: #020103; margin-top: 5px;">
+    <h1 class="text-white fw-bold  mb-5" style="font-size: 52px;"><br>Our Projects:- </h1><br><br>
+    <div class="row">
+        <div class="col-12 m-auto">
+            <div class="owl-carousel owl-theme">
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="living.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Living Room</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="livingroom1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Hall</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="wall1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>WallDrop</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="wall3.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>WallDrop</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="off.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Office Interior</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="59c1e4efa15a15ff6e069f1c573080ed.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Hotel Reception</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="81db23c540cb93de090e3c66b479f645.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Modern Office</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="card border-0 shadow">
+                        <img src="brd2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Hotel Room</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="diningtable.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Dining Table</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="masterbed1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>MasterBed </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="masterroom2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Master Room</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="hotel.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Hotel Interior</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 shadow">
+                        <img src="residental1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h4>Residental Interior</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+ <!-- testimonials carousel -->
+<div class="container-fluid" style="background-image: url(12.jpg); background-repeat: no-repeat; background-size: cover;">
+    <h1 class="text-center text-light" style="font-size: 60px; font-family: 'IM Fell Great Primer SC', serif;"">Satisfied Clients<br> Feedback</h1>
+    <h1 class="text-center text-white" style="font-size: 150px;">"</h1>
+    <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button> 
+        <div class="carousel-inner  text-center  text-light" style=" width: 70%; margin-left: 240px; margin-top: -55px;">
+            <div class="carousel-item active" style="border: 2px solid transparent; height: 400px;">
+                <p class="d-block " style="font-size: xx-large; color: rgb(16, 143, 255);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptates velit, aspernatur nisi aliquid non eos quasi ea excepturi laboriosam fugiat nesciunt eveniet voluptas labore sapiente ratione. Iste, libero, modi tempore est architecto quae omnis porro odio blanditiis excepturi id!</p>
+                <h3 class="text-center">Himanshu Suthar</h3>
+                <h6 class="text-center">Web designer</h6>
+            </div>
+            <div class="carousel-item" style="height: 400px; border: 2px solid transparent;">
+                <p class="d-block " style="font-size: xx-large; color: rgb(5, 136, 251);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptates velit, aspernatur nisi aliquid non eos quasi ea excepturi laboriosam fugiat nesciunt eveniet voluptas labore sapiente ratione. Iste, libero, modi tempore est architecto quae omnis porro odio blanditiis excepturi id!</p> <br><h3 class="text-center">Himanshu Suthar</h3>
+                    <h6 class="text-center">Web designer</h6>
+
+            </div>
+            <div class="carousel-item" style="height: 400px; border: 2px solid transparent;">
+                <p class="d-block " style=" font-size: xx-large; color: rgb(0, 127, 238);" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptates velit, aspernatur nisi aliquid non eos quasi ea excepturi laboriosam fugiat nesciunt eveniet voluptas labore sapiente ratione. Iste, libero, modi tempore est architecto quae omnis porro odio blanditiis excepturi id!</p>
+                <h3 class="text-center">Himanshu Suthar</h3>
+                    <h6 class="text-center">Web designer</h6>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<section class=" container-fluid section2 ">
+    <br>
+    <div class="album">
+        <div class="active" style="background-image: url('residental1.jpg');"></div>
+        <div class="active"  style="background-image: url('walldrop.jpg');"></div>
+        <div class="active" style="background-image: url('commerical1.jpg');"></div>
+        <div class="active" style="background-image: url('hospital.jpg');"></div>
+        <div class="active" style="background-image: url('hotel.jpg');"></div>
+        <div class="active" style="background-image: url('tv\ unit1.jpg');"></div>
+    </div>
+    <br>
+   </section>
+   <div class="div7 bg-dark">
+    <div class="row mx-4">
+        <div class="col-3 my-3">
+            <h2 class="mx-4 text-light">Address:-</h2>
+            <p class="mx-4 text-light">303,Subham Karoti Apartment
+                Karigeon near, Satanarayan 
+                Mandir
+                Bhayandar (east) ,mumbai 401105</p>
+        </div>
+        <div class="col-3 text-light my-3">
+            <h5 class="text-center"><a href="privacypolicy.html" class="text-light" style="text-decoration: none;">Privacy Policy</a></h5>
+            
+            <h5 class="text-center"><a href="TermCondition.html" class="text-light" style="text-decoration: none;">Terms and Conditions</a></h5>
+            
+            <h5 class="text-center"><a href="about.html" class="text-light" style="text-decoration: none;">About Us</a></h5>
+
+        </div>
+        <div class="col-3 text-light my-3">
+            <h3 class="text-center">Contact Detail</h3>
+            <h3 class="text-center">+91-8107758913</h3>
+            <h5 class=" text-center">himanshujigneshsuthar@gmail.com</h5>
+            <div class="text-center" id="social"><a href=""><img  src="icons8-facebook-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                <a href=""><img src="icons8-instagram-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                <a href=""><img src="icons8-linkedin-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                <a href=""><img src="icons8-twitter-48.png" alt="" style="height: 40px; width: 40px;"></a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="container-fluid">
+                <button style="margin-top: 50px; margin-left: 30px; width: 150px;" type="button" class="btn btn-outline-danger" id="get" data-bs-target="#mymodal" data-bs-toggle="modal">Get Quote</button>
+            </div>
+            <div class="modal" id="mymodal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Getting Touch With Us </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="contact form" style="height: 520px;   padding: 10px;">
+                            <label for="" ng-required="true">Name:-</label><br>
+                            <input type="text" placeholder="Name" class="form-control"><br>
+                            <label for="">Contact No:-</label><br>
+                            <input type="number" placeholder="Contact No" class="form-control"><br>
+                            <label for="">Email Id:-</label><br>
+                            <input type="email" name="" id="" placeholder="Email" class="form-control"><br>
+                            <label for="">Location:-</label><br>
+                            <input type="text" placeholder="Location" name="" id="" class="form-control"><br>
+                            <label for="">Purpose:-</label><br>
+                            <select name="" id="" placeholder="Select " class="form-control">
+                                <option value="">
+                                </option>
+                                <option value="">Residential</option>
+                                <option value="">Commercial</option>
+                                <option value="">Hospital</option>
+                                <option value="">Turnkey</option>
+                            </select><br><br>
+                            <button class="btn btn-outline-primary" data-bs-target="#submit">Submit</button>
+                        </form>
+                    </div>
+                   
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+    </div><br><br>
+    <p class="mx-5 text-light" style="font-size: 18px;">We are among the leading commercial Interior Designing service provider in Mumbai with over 20 Years of experience in this industry. We help you with a complete unique
+        creative combination of exclusive design services and also help you during the execution process. We Provide you with fixed working fees and offer you complete control
+        over the budget. We make sure that about transparency, affordability, flexibility, reliability, loyalty, with 100% commitment.
+       Our professional team of dedicated and experienced 100 + interior designers in Mumbai combines their skills and works in your projects to create outstanding interior
+        designs right from your home to office with the magnificent view. call us to get an affordable price, unique design, fast delivery, long time service provider support.
+        and many more.</p><br>
+        <p class="mx-5 text-light" style="font-size: 18px;">Interior Designer in Mumbai, office, work, design, interiordesign, business, officedesign, architecture, officeinterior, officespace, startup, officeinteriordesign, workspace,
+            officedecor, instagood, realestate, homedecor, officefurniture, coworking, workplace, working, entrepreneur, residential, commercial</p>
+            <br>
+            <div class="line mx-4 text-light" style="height: 0px; border: 1px solid white;"></div>
+               
+                  
+                    <div class="">
+
+                        <h4 class="text-light text-center pt-3" style="font-family: 'IM Fell Great Primer SC', serif;">Designed By THAR SOFTTECH © 2023. All Rights Reserved.<br></h4>
+                       
+                    </div>
+                
+                
+   
+
+ </div>        
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .section2{
+            background-color: rgb(184, 193, 193);
+            /* display: flex; */
+
+        }
+        body{
+            overflow-x:hidden;
+        }
+        /* .div61{
+            background-image: url(hotel.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            height: 230px;
+            width: 250px;
+            border: 2px solid black;
+        }
+        .div62{
+            background-image: url(commerical1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            height: 230px;
+            width: 250px;
+            border: 2px solid black;
+        }
+        .div63{
+            background-image: url(walldrop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            height: 230px;
+            width: 250px;
+            border: 2px solid black;
+        }
+        .div64{
+            background-image: url(hospital.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            height: 230px;
+            width: 250px;
+            border: 2px solid black;
+        }
+        .div65{
+            background-image: url(tv\ unit1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            height: 230px;
+            width: 250px;
+            border: 2px solid black;
+        }
+        .div66{
+            background-image: url(residental1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 15px;
+            height: 230px;
+            width: 250px;
+            border: 2px solid black;
+        } */
+        
+        .bg-danger{
+            border: 1px solid black;
+            width: 170px;
+            height: 40px;
+            margin: 50px;
+            color:aliceblue;
+        }
+        
+        .div7{
+            height: 560px;
+        }
+        .fontsize{
+            font-size :65px;
+        }
+        .album{
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .album > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s ;
+        }
+        .album > div:hover{
+            flex: 5;
+        }
+        .active{
+            border: 2px solid black;
+        }
+        .triangle{
+            margin-left: 30px;
+            width: 150px;
+            height: 130px;
+        }
+        .round{
+            margin-left: 60px;
+            width: 100px;
+            height: 100px;
+        }
+        </style>
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+
+    <!-- navebar -->
+   <nav class="navbar navbar-expand-lg navbar-dark " style="height: 100px; background: black;  width: 100%; font-family: 'IM Fell Great Primer SC', serif;"" >
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbar2">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link active ms-5" aria-current="page" style="font-size: 30px; color:goldenrod">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link "style="font-size: 30px; margin-left:200px; font-style:Serif; color:goldenrod">About Us</a></li>
+                </ul>
+            </div>
+            <a href="home.html" class="navbar-brand text-center"><img src="lo.png" alt="" width="170px" style="height: 150px; margin-top: 100px; margin-left: 100px;"></a>
+            <Div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown"><a href="service.html" class="nav-link dropdown" role="button" data-bs-toggle="dropdown" style="font-size: 30px; margin-right:200px; color:goldenrod">Our Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html" class="dropdown-item">Our Service</a></li>
+                            <li><a href="residental.html" class="dropdown-item">Residental Interior Services</a></li>
+                            <li><a href="commersial.html" class="dropdown-item">Commercial Interior Services</a></li>
+                            <li><a href="hospital.html" class="dropdown-item">Hospital Interior Service</a></li>
+                            <li><a href="Hotel.html" class="dropdown-item">Turnkey Interior Service</a></li>
+                        </ul>
+                        <li class="nav-item"><a href="contactus.html" class="nav-link me-5" style="font-size: 30px; color:goldenrod">Contact Us</a></li>
+        </li>
+            </ul>
+           
+    </div>
+</nav>
+<br><br><br><br>
+<div class="container text-center ">
+    <a href="residental.html"><img src="residental1.jpg" alt="" width="40%" style="height: 500px; margin-right: 30px; border: 3px solid black; border-radius: 20px;"></a>
+    <a href="commersial.html"><img src="commerical1.jpg" alt="" width="40%" style="height: 500px; margin-left: 30px; border: 3px solid black; border-radius: 20px;"></a>
+</div>
+<br><br><br>
+<div class="container text-center ">
+    <a href="Hotel.html"><img src="hotel.jpg" alt="" width="40%" style="height: 500px; margin-right: 30px; border: 3px solid black; border-radius: 20px;"></a>
+    <a href="hospital.html"><img src="hospital.jpg" alt="" width="40%" style="height: 500px; margin-left: 30px; border: 3px solid black; border-radius: 20px;"></a>
+</div>
+    
+    <!-- <div class="container my-5">
+        <button class="  container rounded-4  "><img src="residental1.jpg" width="1300px" height="650px" class="container " ></button> 
+    </div>
+    <div class="container my-5">
+        <button class="container rounded-4"><img src="commerical1.jpg" width="1300px" height="650px" class="container" ></button>
+    </div>
+    <div class="container my-5">
+        <button class="container rounded-4"><img src="hospital.jpg" width="1300px" height="650px" class="container" ></button>
+    </div>
+    <div class="container my-5">
+        <button class="container rounded-4"><img src="hotel.jpg" width="1300px" height="650px" class="container" ></button>
+    </div> -->
+    <br><br>
+    <div class="container">
+        <h3>DESIGN STUDIO</h3> 
+        <div class="row">
+            <div class="col-6">
+                <h1 class="fontsize" style="font-family: 'IM Fell Great Primer SC', serif;">Exclusive interior <br>
+                    design for your <br>
+                     comfort.</h1>
+            </div>
+            <div class="col-3">
+                        <img class="triangle" src="Group 6 (2).png" >
+                        <h3 class="mx-5" style="font-family: 'IM Fell Great Primer SC', serif;">Industrial</h3>
+                        <p>We execute all types of Office & commercial
+                            projects, such as Corporate office, BPO, KPO,
+                            banks, hospitals</p> </div>
+                    <div class="col-3"> 
+                        <img class="round" src="Group 7.jpg">
+                        <br><br>
+                        <h3 class="mx-5 mt-1" style="font-family: 'IM Fell Great Primer SC', serif;">Residential</h3>
+                        <p>We have a team of professional designers
+                            that offer decorative and home improvement
+                            services</p>
+                    </div>
+                  </div>
+    </div>
+    <br><br>
+    <section class=" container-fluid section2 "> <br>
+        <div class="album">
+            <div class="active" style="background-image: url('residental1.jpg');"></div>
+            <div class="active"  style="background-image: url('walldrop.jpg');"></div>
+            <div class="active" style="background-image: url('commerical1.jpg');"></div>
+            <div class="active" style="background-image: url('hospital.jpg');"></div>
+            <div class="active" style="background-image: url('hotel.jpg');"></div>
+            <div class="active" style="background-image: url('tv\ unit1.jpg');"></div>
+        </div>
+        <br>
+       </section>
+       <div class="div7 bg-dark">
+        <div class="row mx-4">
+            <div class="col-3 my-3">
+                <h2 class="mx-4 text-light">Address:-</h2>
+                <p class="mx-4 text-light" style="font-size: 18px;">303,Subham Karoti Apartment
+                    Karigeon near, Satanarayan 
+                    Mandir
+                    Bhayandar (east) ,mumbai 401105</p>
+            </div>
+            <div class="col-3 text-light my-5">
+                <h5 class="text-center"><a href="privacypolicy.html" class="text-light" style="text-decoration: none;">Privacy Policy</a></h5>
+                
+                <h5 class="text-center"><a href="TermCondition.html" class="text-light" style="text-decoration: none;">Terms and Conditions</a></h5>
+                
+                <h5 class="text-center"><a href="about.html" class="text-light" style="text-decoration: none;">About Us</a></h5>
+    
+            </div>
+            <div class="col-3 text-light my-3">
+                <h3 class="text-center">Contact Detail</h3>
+                <h3 class="text-center">+91-8107758913</h3>
+                <h5 class=" text-center">himanshujigneshsuthar@gmail.com</h5>
+                <div class="text-center" id="social"><a href=""><img  src="icons8-facebook-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                    <a href=""><img src="icons8-instagram-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                    <a href=""><img src="icons8-linkedin-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                    <a href=""><img src="icons8-twitter-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container-fluid">
+                    <button style="margin-top: 50px; margin-left: 30px; width: 150px;" type="button" class="btn btn-outline-danger" id="get" data-bs-target="#mymodal" data-bs-toggle="modal">Get Quote</button>
+                </div>
+                <div class="modal" id="mymodal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">Getting Touch With Us </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="contact form" style="height: 520px;   padding: 10px;">
+                                <label for="" ng-required="true">Name:-</label><br>
+                                <input type="text" placeholder="Name" class="form-control"><br>
+                                <label for="">Contact No:-</label><br>
+                                <input type="number" placeholder="Contact No" class="form-control"><br>
+                                <label for="">Email Id:-</label><br>
+                                <input type="email" name="" id="" placeholder="Email" class="form-control"><br>
+                                <label for="">Location:-</label><br>
+                                <input type="text" placeholder="Location" name="" id="" class="form-control"><br>
+                                <label for="">Purpose:-</label><br>
+                                <select name="" id="" placeholder="Select " class="form-control">
+                                    <option value="">
+                                    </option>
+                                    <option value="">Residential</option>
+                                    <option value="">Commercial</option>
+                                    <option value="">Hospital</option>
+                                    <option value="">Turnkey</option>
+                                </select><br><br>
+                                <button class="btn btn-outline-primary" data-bs-target="#submit">Submit</button>
+                            </form>
+                        </div>
+                       
+                        </div>
+                        
+                    </div>
+                </div>
+             </div>
+        </div><br><br>
+        <p class="mx-5 text-light" style="font-size: 18px;">We are among the leading commercial Interior Designing service provider in Mumbai with over 20 Years of experience in this industry. We help you with a complete unique
+            creative combination of exclusive design services and also help you during the execution process. We Provide you with fixed working fees and offer you complete control
+            over the budget. We make sure that about transparency, affordability, flexibility, reliability, loyalty, with 100% commitment.
+           Our professional team of dedicated and experienced 100 + interior designers in Mumbai combines their skills and works in your projects to create outstanding interior
+            designs right from your home to office with the magnificent view. call us to get an affordable price, unique design, fast delivery, long time service provider support.
+            and many more.</p><br>
+            <p class="mx-5 text-light" style="font-size: 18px;">Interior Designer in Mumbai, office, work, design, interiordesign, business, officedesign, architecture, officeinterior, officespace, startup, officeinteriordesign, workspace,
+                officedecor, instagood, realestate, homedecor, officefurniture, coworking, workplace, working, entrepreneur, residential, commercial</p>
+                <br>
+                <div class="line mx-4 text-light" style="height: 0px; border: 1px solid white;"></div>
+                   
+                      
+                        <div class="">
+    
+                            <h4 class="text-light text-center pt-3" style="font-family: 'IM Fell Great Primer SC', serif;">Designed By THAR SOFTTECH © 2023. All Rights Reserved.</h4>
+                        </div>
+                    
+       
+    
+     </div>          
+
+</body>
+
+</html>

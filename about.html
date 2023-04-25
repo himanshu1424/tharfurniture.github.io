@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            overflow-x:hidden ;
+        }
+        li:hover{
+            color: red;
+        }
+        .about{
+            margin-top: 10px;
+            margin-left: 120px;
+            color: #8f6806;
+        }
+
+        .paragrap{
+            font-size: 20px;
+            margin-left: 120px; 
+            color: #8f6806;
+
+
+        }
+        #thar{
+           margin-top: 44px;
+        }
+        #im{
+            height: 400px ;
+            width:500px ;
+            box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+        }
+        #dark{
+
+            margin-top: 40px; 
+            height: 200px;
+            display: flex;
+            /* color: blueviolet; */
+            /* text-decoration: none;  */
+            /* list-style-type: none; */
+            /* padding-top: 100px; */
+            /* padding-left: 300px; */
+            /* font-size: 50px; */
+            /* margin:px;*/
+        }
+        .no{
+            /* border: 2px solid red;  */
+            margin-left: 80px;
+            margin-top: 15px;
+            height: 200px;
+            width: 200px;
+        }
+         .year{ 
+            padding-top: 40px;
+            color: white;
+            text-align: center;
+        }
+       
+        h7{
+            text-align: center;
+            text-align: justify;
+            color: aliceblue;
+            padding-left: 40px; ;
+        }
+        .c{
+            /* text-align: start; */
+            padding-left :10px; ;
+            color:aliceblue;
+        }
+        #project{
+            background-image: url(hotel.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top:50px;
+            width: 99%;
+            height: 400px;
+            /* opacity: .7; */
+            /* z-index: 0; */
+        }
+        .ourexpertise{
+            margin-top:15px;
+            margin-left :50px;
+        }
+        .div3{
+
+            margin-top :50px;
+        }
+        .para{
+            font-size: 18px; 
+        }
+        .div4{
+            margin-top:50px;
+        }
+        .div4para{
+            font-size: 18px; 
+
+        }
+        .section2{
+            background-color: rgb(184, 193, 193);
+            /* display: flex; */
+
+        }
+        .active{
+            border: 2px solid black;
+        }
+        .album{
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .album > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s ;
+        }
+        .album > div:hover{
+            flex: 5;
+        }
+        .motion{
+            border: 0.2px solid black;
+        }
+        .motionslider{
+            width: 80px;
+            height: 5px;
+            background-color: black;
+            border: 2px solid black;
+        }
+        .motionslider:hover{
+            transform: translateX(402px);
+            /* transform: translateX(-452px); */
+            transition: 3s all ease-in-out;
+        }
+       
+        
+        
+        .b{
+            height: 200px;
+        }
+        .c{
+            text-align: center;
+            
+        }
+        .bg-danger{
+            border: 1px solid black;
+            width: 170px;
+            height: 40px;
+            margin: 50px;
+            color:aliceblue;
+        }
+        .bg-dark{
+            height: 550px;
+        }
+        .logospace{
+            margin-left: 50px;
+        }
+        #about{
+            height:50vh;
+            background-image: url('Untitled design.png');
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            /* background-color: cyan; */
+            padding:20px;
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+   <!-- navebar -->
+   <nav class="navbar navbar-expand-lg navbar-dark " style="height: 100px; background: black;  width: 100%; font-family: 'IM Fell Great Primer SC', serif;" >
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbar2">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="home.html" class="nav-link active ms-5" aria-current="page" style="font-size: 30px; color:goldenrod" id="head">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link "style="font-size: 30px; margin-left:200px; font-style:Serif; color:goldenrod" id="head">About Us</a></li>
+                </ul>
+            </div>
+            <a href="home.html" class="navbar-brand text-center"><img src="lo.png" alt="" width="170px" style="height: 150px; margin-top: 100px; margin-left: 100px;"></a>
+            <Div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown"><a href="service.html" class="nav-link dropdown" role="button" data-bs-toggle="dropdown" style="font-size: 30px; margin-right:200px; color:goldenrod" id="head">Our Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html" class="dropdown-item" id="head">Our Service</a></li>
+                            <li><a href="residental.html" class="dropdown-item">Residental Interior Services</a></li>
+                            <li><a href="commersial.html" class="dropdown-item">Commercial Interior Services</a></li>
+                            <li><a href="hospital.html" class="dropdown-item">Hospital Interior Service</a></li>
+                            <li><a href="Hotel.html" class="dropdown-item">Turnkey Interior Service</a></li>
+                        </ul>
+                        <li class="nav-item"><a href="contactus.html" class="nav-link me-5" style="font-size: 30px; color:goldenrod" id="head">Contact Us</a></li>
+        </li>
+            </ul>
+           
+    </div>
+</nav>
+
+
+<div class="container-fulid div1 " id="about">
+
+    <h1 class="about "><br><br>About Us</h1>
+    <P class="paragrap"><b><br>Get A Place Designed Exactly How You Wished <br>
+    We understand your deepest desires and give your space the interiors you want. HC Interior excels at 
+    turning 
+    <br>
+    your vague space into something beautiful, reliable and worth living.</b> </P>
+    <br><br></div>
+  <div class="container bg-light" id="thar">
+    <div class="row">
+        <div class="col-6">
+            <h1 style="font-family: 'IM Fell Great Primer SC', serif;">
+                How <b style="color: #FFC120;">Thar Furniture</b> Came into Existence?
+            </h1>
+            <p><b style="color: #FFC120;">Thar Furniture</b> started its creativity and brought liveliness 
+                into interiors in the year 2018. The reason behind the
+                introduction of  <b style="color: #FFC120;">Thar Furniture</b> was to avail the best and 
+                most affordable Interiors to all those who face struggles 
+                in searching for the right one. Also to provide the Interior
+                Designing services to all those who are worried about the 
+                fact of creativity and budget.<br>
+            <br>
+            The aim is to deliver the best and most efficient services 
+            in terms of interior design services. With the intention 
+            of providing the best services, <b style="color: #FFC120;">Thar Furniture</b> believes in 
+            giving valuable service for the money spent by the client.</p>
+        </div>
+        <div class="col-6">
+            <img src="tv unit 2.jpg" class="mx-auto d-block my-3 img-thumbnail bg-dark" id="im">
+        </div>
+    </div>
+  </div>
+  <section class="container bg-black text-white b my-4">
+    <div class="row py-5" style="font-family: 'EB Garamond', serif;">
+        <div class="col-3">
+            <p style="text-align: center;
+            font-size: xx-large;">530</p>
+            <p style="text-align: center; font-size: 25px; " >PROJECT DONE</p>
+        </div>
+        <div class="col-3">
+            <p style="text-align: center;
+            font-size: xx-large;">480</p>
+            <p style="text-align: center; font-size: 25px">HAPPY CLINET</p>
+        </div>
+        <div class="col-3">
+            <p style="text-align: center;
+            font-size: xx-large;">470</p>
+            <p style="text-align: center; font-size: 25px">RESIDENTIAL PROJECT</p>
+        </div>
+        <div class="col-3">
+            <p style="text-align: center;
+            font-size: xx-large;">15+</p>
+            <p style="text-align: center; font-size: 25px">YEAR OF EXPERIENCE</p>
+        </div>
+    </div>
+</section>
+ <div class="container-fulid" id="project">
+    <h1 class=" ourexpertise" style="font-family: 'IM Fell Great Primer SC', serif;">Our Expertise</h1>
+ </div>
+ <div class="container-fluid div3">
+    <h1 class="mx-4" style="font-family: 'IM Fell Great Primer SC', serif;">What makes <b style="color: #FFC120;">Thar Furniture</b> the best interior designing company ?</h1><br>
+    <p class=" para mx-4">Our excellent way of working reflects entirely in the projects we have completed till now. Together as a team, we love
+        spending time in transforming faces of different spaces that impact your life. As one of the best interior designing 
+        companies in Rajasthan, we are well-versed in what it takes to work beyond client’s expectations and deliver them the best. <br>
+        Being one of the best in the interior designing industry, we pay close attention to the clients’ requirements before
+        showing them our collection of the interior designs. Moreover, our whole way of working is completely transparent, 
+        and we stay in touch with the client at every step and keep them updated with the project’s progress. With such an 
+        excellent and honest way of working, we have fortunately collected a huge client base for whom we are the best 
+        interior designer company in Rajasthan.</p>
+ </div>
+ <div class="container-fluid div4">
+    <h1 class="mx-4" style="font-family: 'IM Fell Great Primer SC', serif;">What are we experts at?</h1>
+    <p class="mx-4 div4para">Our team of proficient carpenters are not the only expert in delivering you the best interiors but also ensures it matches
+        your taste and style. We become naturally best once we put on our creative hats and make use of our impeccable skills to 
+        deliver what you asked for. We take care of everything from lighting, storage, space to cozy interiors. <br>
+        Whether you want us to create a modular kitchen or exquisitely design your bedroom interiors, you can rely on us to
+        get the best you never expected. We strive hard to stand by the promises we make to our clients instead of giving them
+        false hopes. <br>
+        We are experts at several things and good at eagerly following daily trends. Here is what we can do for you:</p>
+ </div>
+ <br>
+ 
+   <div class="container-fluid  mx-4">
+    <br>
+    <h1 style="font-family: 'IM Fell Great Primer SC', serif;">Our Story</h1>
+    <br>
+    <div class="row">
+        <div class="col-4">
+            <h5 class="mx-5">RESIDENTAL INTERIOR DESIGN</h5>
+            <div class="motionslider"></div>
+            <div class="motion"></div>
+            <br><br><br>
+            <h5 class="mx-5">COMMERCIAL INTERIOR DESIGN</h5>
+            <div class="motionslider"></div>
+            <div class="motion">
+            </div>
+            <br><br><br>
+            <h5 class="mx-5">HOSPITAL INTERIOR DESIGN</h5>
+            <div class="motionslider"></div>
+            <div class="motion">
+            </div>
+            <br><br><br>
+            <h5 class="mx-5">HOTEL INTERIOR DESIGN</h5>
+            <div class="motionslider"></div>
+            <div class="motion">
+            </div>
+        </div>
+
+        <div class="col-8">
+            <p class=""><b style="color: #FFC120;">Thar Furniture</b> understands interior designing is not about arranging things in the pattern
+                but about utilizing the given space effectively to ensure it both looks and feels good. So
+               connect with us, and let’s discuss your requirements.</p>
+               <br><br>
+               <p>Would you like to work in an office that is both comfortable and shoots up your 
+                productivity? If yes, then here we are as your expert office interior designers. Our 
+                competent team knows how to align every piece together and make your place worth
+                working for you and your employees.</p>
+                <br>
+                <p>We are here to change the notion of people around who believe the hospital is a stressful
+                    place. As expert hospital interior designers, we have the skills needed to turn a vague 
+                    hospital, clinic or other medical space into a place with excellent aesthetics.</p>
+                    <br><br>
+                    <p>If you want us to revamp a small space or add an extra oomph to the existing one, then 
+                        here we are with our architecture service. You don’t need to look any further than Thar 
+                        Furniture. We have one of the best teams available at your disposal to help you get the 
+                        interiors you always wanted. We are good at accomplishing the most in stipulated time.</p>
+        </div>
+    </div>
+   </div>
+   <section class=" container-fluid section2 ">
+    <br>
+    <div class="album">
+        <div class="active" style="background-image: url('residental1.jpg');"></div>
+        <div class="active"  style="background-image: url('walldrop.jpg');"></div>
+        <div class="active" style="background-image: url('commerical1.jpg');"></div>
+        <div class="active" style="background-image: url('hospital.jpg');"></div>
+        <div class="active" style="background-image: url('hotel.jpg');"></div>
+        <div class="active" style="background-image: url('tv\ unit1.jpg');"></div>
+    </div>
+    <br>
+   </section>
+   <div class=" bg-dark" style="height: 550px;">
+    <div class="row mx-4">
+        <div class="col-3 my-3">
+            <h2 class="mx-4 text-light">Address:-</h2>
+            <p class="mx-4 text-light" style="font-size: 18px;">303,Subham Karoti Apartment
+                Karigeon near, Satanarayan 
+                Mandir
+                Bhayandar (east) ,mumbai 401105</p>
+        </div>
+        <div class="col-3 text-light my-4">
+            <h5 class="text-center"><a href="privacypolicy.html" class="text-light" style="text-decoration: none;">Privacy Policy</a></h5>
+            
+            <h5 class="text-center"><a href="TermCondition.html" class="text-light" style="text-decoration: none;">Terms and Conditions</a></h5>
+            
+            <h5 class="text-center"><a href="about.html" class="text-light" style="text-decoration: none;">About Us</a></h5>
+
+        </div>
+        <div class="col-3 text-light my-3">
+            <h3 class="text-center">Contact Detail</h3>
+            <h3 class="text-center">+91-8107758913</h3>
+            <h5 class=" text-center">himanshujigneshsuthar@gmail.com</h5>
+            <div class="text-center" id="social"><a href=""><img  src="icons8-facebook-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                <a href=""><img src="icons8-instagram-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                <a href=""><img src="icons8-linkedin-48.png" alt="" style="height: 40px; width: 40px;"></a>
+                <a href=""><img src="icons8-twitter-48.png" alt="" style="height: 40px; width: 40px;"></a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="container-fluid">
+                <button style="margin-top: 50px; margin-left: 30px; width: 150px;" type="button" class="btn btn-outline-danger" id="get" data-bs-target="#mymodal" data-bs-toggle="modal">Get Quote</button>
+            </div>
+            <div class="modal" id="mymodal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Getting Touch With Us </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="contact form" style="height: 520px;   padding: 10px;">
+                            <label for="" ng-required="true">Name:-</label><br>
+                            <input type="text" placeholder="Name" class="form-control"><br>
+                            <label for="">Contact No:-</label><br>
+                            <input type="number" placeholder="Contact No" class="form-control"><br>
+                            <label for="">Email Id:-</label><br>
+                            <input type="email" name="" id="" placeholder="Email" class="form-control"><br>
+                            <label for="">Location:-</label><br>
+                            <input type="text" placeholder="Location" name="" id="" class="form-control"><br>
+                            <label for="">Purpose:-</label><br>
+                            <select name="" id="" placeholder="Select " class="form-control">
+                                <option value="">
+                                </option>
+                                <option value="">Residential</option>
+                                <option value="">Commercial</option>
+                                <option value="">Hospital</option>
+                                <option value="">Turnkey</option>
+                            </select><br><br>
+                            <button class="btn btn-outline-primary" data-bs-target="#submit">Submit</button>
+                        </form>
+                    </div>
+                   
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+    </div><br><br>
+    <p class="mx-5 text-light" style="font-size: 18px;">We are among the leading commercial Interior Designing service provider in Mumbai with over 20 Years of experience in this industry. We help you with a complete unique
+        creative combination of exclusive design services and also help you during the execution process. We Provide you with fixed working fees and offer you complete control
+        over the budget. We make sure that about transparency, affordability, flexibility, reliability, loyalty, with 100% commitment.
+       Our professional team of dedicated and experienced 100 + interior designers in Mumbai combines their skills and works in your projects to create outstanding interior
+        designs right from your home to office with the magnificent view. call us to get an affordable price, unique design, fast delivery, long time service provider support.
+        and many more.</p><br>
+        <p class="mx-5 text-light" style="font-size: 18px;">Interior Designer in Mumbai, office, work, design, interiordesign, business, officedesign, architecture, officeinterior, officespace, startup, officeinteriordesign, workspace,
+            officedecor, instagood, realestate, homedecor, officefurniture, coworking, workplace, working, entrepreneur, residential, commercial</p>
+            <br>
+            <div class="line mx-4 text-light" style="height: 0px; border: 1px solid white;"></div>
+               
+                  
+                    <div class="">
+
+                        <h4 class="text-light text-center pt-3" style="font-family: 'IM Fell Great Primer SC', serif;">Designed By THAR SOFTTECH © 2023. All Rights Reserved.</h4>
+                    </div>
+                
+   
+
+ </div>           
+   
+
+ </div>
+</body>
+</html>
